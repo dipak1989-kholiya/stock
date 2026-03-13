@@ -1,0 +1,5 @@
+{
+  "name": "NSE Intraday Scanner",
+  "description": "Professional intraday stock market scanner for the Indian stock market (NSE) using AI.",
+  "requestFramePermissions": []
+}
