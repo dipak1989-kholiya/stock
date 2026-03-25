@@ -36,7 +36,7 @@ export default function Scanner() {
     setIsScanning(true);
     setError(null);
     try {
-      const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || 'AIzaSyC5T899JUSQcdiqMqbp2pOjdwgdAKpmKdY';
+      const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
       if (!apiKey) {
         throw new Error('Gemini API Key is missing. Please configure it in the AI Studio settings.');
       }
