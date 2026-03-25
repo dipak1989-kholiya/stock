@@ -22,15 +22,7 @@ export default function AdBanner({
     }
   }, []);
 
-  const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID;
-
-  if (!adsenseId) {
-    return (
-      <div className="w-full h-32 bg-neutral-900/50 border border-dashed border-neutral-800 rounded-xl flex items-center justify-center text-neutral-500 text-sm italic">
-        Ad Space (Configure NEXT_PUBLIC_ADSENSE_ID to display)
-      </div>
-    );
-  }
+  const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID || 'ca-pub-8319858590933477';
 
   return (
     <div className="w-full overflow-hidden my-8">
